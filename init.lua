@@ -2,7 +2,7 @@
 minetest.register_privilege("invincible", "Makes a player invincible")
 
 armor:register_armor("bls:shield", {
-    description = "VF Shield",
+    description = "Hawk Shield",
     inventory_image = "vf_shield_vf_inv.png",
     texture = "vf_shield_vf.png",
     preview = "vf_shield_vf_preview.png",
@@ -13,11 +13,11 @@ armor:register_armor("bls:shield", {
 })
 
 armor:register_armor("bls:flareshield", {
-    description = "VF Flare Shield",
+    description = "Hawk Flare Shield",
     inventory_image = "fireshield_inv.png",
     texture = "fireshield.png",
     preview = "fireshield_preview.png",
-    groups = {armor_shield=1, armor_heal=12, armor_use=100, armor_fire=10, physics_jump=0.5, physics_speed=1},
+    groups = {armor_shield=1, armor_heal=15, armor_use=100, armor_fire=10, physics_jump=5, physics_speed=2},
     armor_groups = {fleshy = 0},
     drop = {},
     on_drop = function(itemstack, dropper, pos) end
